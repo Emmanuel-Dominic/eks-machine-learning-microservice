@@ -1,0 +1,8 @@
+ignored:
+  - DL3013
+  - SC1091
+
+trustedRegistries:
+  - docker.io
+  - my-company.com:5000
+  - "*.gcr.io"
