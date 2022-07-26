@@ -1,24 +1,3 @@
-# install python 3.7
-sudo apt install -y software-properties-common
-sudo add-apt-repository ppa:deadsnakes/ppa
-sudo apt update -y
-sudo apt install -y build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libsqlite3-dev libreadline-dev libffi-dev wget libbz2-dev
-wget https://www.python.org/ftp/python/3.7.2/Python-3.7.2.tgz
-tar xvf Python-3.7.2.tgz
-cd Python-3.7.2
-./configure --enable-optimizations --enable-shared
-make
-sudo make install
-sudo apt install -y python3.7-venv libpython3.7 python3-virtualenv
-sudo apt auto-remove -y
-sudo apt update -y
-sudo apt upgrade -y
-cd ..
-python3 -m venv venv
-source venv/bin/activate
-virtualenv --clear venv
-sudo rm -rf Python-3.7.2*
-
 # install make
 sudo apt install make
 
