@@ -3,8 +3,8 @@ from flask.logging import create_logger
 import logging
 
 import pandas as pd
-import joblib
-# from sklearn.externals import joblib
+# import joblib # supported in python3.8<
+from sklearn.externals import joblib
 from sklearn.preprocessing import StandardScaler
 
 app = Flask(__name__)
